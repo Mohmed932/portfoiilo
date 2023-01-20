@@ -89,14 +89,14 @@ textarea {
   .Contact-deal,
   .Contact-form {
     width: 65%;
-    margin: 0 30px;
+    margin: 0;
     padding: 50px;
   }
 }
 @media (max-width: 550px) {
   .Contact-deal,
   .Contact-form {
-    width: 95%;
+    width: 90%;
     margin: 0;
     padding: 0;
   }
@@ -106,5 +106,8 @@ textarea {
   .Contact-me h1 {
     font-size: 35px;
     margin-bottom: 50px;
+  }
+  .Contact-form .btn {
+    margin: 50px 0;
   }
 }

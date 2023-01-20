@@ -45,6 +45,9 @@
   padding: 20px;
   color: #0061f2;
 }
+.About-personal {
+  color: #3d3d3d;
+}
 .About-skilis,
 .About-more {
   width: 90%;
@@ -106,6 +109,9 @@
   .About-more {
     width: 95%;
     margin: 0 10px;
+  }
+  .About-skilis {
+    width: 100%;
   }
   .About-personal i {
     font-size: 10px;

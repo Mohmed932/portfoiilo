@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 import { motion } from "framer-motion";
 
@@ -7,7 +7,6 @@ const Contact = () => {
   const [email, setEmail] = useState(null);
   const [message, setMessage] = useState(null);
   const [validate, setValidate] = useState(null);
-  const [showbtn, setshowbtn] = useState(false);
   const ValidateEmail = () => {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
       return setValidate(true);
@@ -18,13 +17,6 @@ const Contact = () => {
     setEmail(e);
     ValidateEmail();
   };
-  useEffect(() => {
-    if (name !== null && email !== null && message !== null && !validate) {
-      setshowbtn(true);
-    } else {
-      setshowbtn(false);
-    }
-  }, [email, message, name]);
   const handelClick = () => {
     if (validate && name !== null && email !== null && message !== null) {
       setName("");
@@ -42,7 +34,6 @@ const Contact = () => {
       <h1>
         CONTACT <span>ME</span>
       </h1>
-      ;
       <div className="Contact" id="five">
         <motion.div
           className="Contact-deal"
@@ -96,6 +87,7 @@ const Contact = () => {
                 type="name"
                 onChange={(e) => setName(e.target.value)}
                 value={name}
+                required
               />
               {name === "" ? <span>you must enter you name</span> : ""}
             </div>
@@ -107,6 +99,7 @@ const Contact = () => {
                 type="email"
                 onChange={(e) => handelemail(e.target.value)}
                 value={email}
+                required
               />
               {email === "" ? <span>you must enter you email</span> : ""}
               {validate ? <span>you email is not invalid</span> : ""}
@@ -120,16 +113,13 @@ const Contact = () => {
                 className="Contact-message"
                 onChange={(e) => setMessage(e.target.value)}
                 value={message}
+                required
               />
               {message === "" ? <span>you must enter you name</span> : ""}
             </div>
-            {showbtn ? (
-              <button type="submit" className="btn" onClick={handelClick}>
-                Submit
-              </button>
-            ) : (
-              ""
-            )}
+            <button type="submit" className="btn" onClick={handelClick}>
+              Submit
+            </button>
           </form>
         </motion.div>
       </div>
