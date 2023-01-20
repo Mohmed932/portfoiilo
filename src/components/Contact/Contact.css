@@ -1,0 +1,110 @@
+.Contact-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.Contact-me h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 100px;
+}
+.Contact-me h1 span {
+  color: #4b82d4;
+}
+.Contact {
+  width: 85%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.Contact-deal,
+.Contact-form {
+  width: 50%;
+  min-height: 60vh;
+  padding: 50px;
+}
+.Contact-deal {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.Contact-deal img {
+  border-radius: 20px;
+  width: 100%;
+}
+.Contact-deal span {
+  margin: 15px 0;
+  line-height: 1.5;
+}
+.Contact-icon a {
+  padding: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #000;
+}
+.Contact-icon-facebook {
+  margin-left: -15px;
+}
+.main-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.main-form span,
+label {
+  margin: 5px 0;
+}
+.main-form span {
+  color: red;
+}
+.main-form input,
+textarea {
+  width: 75%;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 100;
+  caret-color: #4b82d4;
+}
+.Contact-message {
+  min-height: 20vh;
+}
+
+@media (max-width: 1350px) {
+  .main-form input,
+  textarea {
+    width: 90%;
+  }
+}
+@media (max-width: 1000px) {
+  .Contact {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Contact-deal,
+  .Contact-form {
+    width: 65%;
+    margin: 0 30px;
+    padding: 50px;
+  }
+}
+@media (max-width: 550px) {
+  .Contact-deal,
+  .Contact-form {
+    width: 95%;
+    margin: 0;
+    padding: 0;
+  }
+  .Contact-icon-facebook {
+    margin-left: 0;
+  }
+  .Contact-me h1 {
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+}
