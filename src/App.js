@@ -7,7 +7,7 @@ const Page = lazy(() => import("./Page/Page"));
 const NotFound = lazy(() => import("../src/components/NotFound/NotFound"));
 
 const App = () => {
-  const [move, setMove] = useState();
+  const [move, setMove] = useState(0);
   window.onscroll = () => {
     setMove(window.scrollY);
   };
@@ -23,8 +23,8 @@ const App = () => {
       {move > 50 ? (
         <motion.i
           class="fa-solid fa-arrow-up"
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         ></motion.i>

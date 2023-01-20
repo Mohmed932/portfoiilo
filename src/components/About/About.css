@@ -36,7 +36,8 @@
 .About h1 {
   color: #0061f2;
 }
-.About p {
+.About p,
+.About-personal span {
   color: #3d3d3d;
   margin: 20px 0;
   line-height: 1.6;
@@ -44,9 +45,6 @@
 .About-personal i {
   padding: 20px;
   color: #0061f2;
-}
-.About-personal span {
-  color: #3d3d3d;
 }
 .About-skilis,
 .About-more {
@@ -112,7 +110,7 @@
   .skilis-speed {
     width: 100%;
   }
-  s .About-personal i {
+  .About-personal i {
     font-size: 10px;
     padding: 10px;
   }

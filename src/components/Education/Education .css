@@ -81,4 +81,7 @@ a {
   .main-Education .main h2 {
     font-weight: 900;
   }
+  .Education h1 {
+    padding: 0 30px;
+  }
 }

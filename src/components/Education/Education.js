@@ -46,7 +46,7 @@ const Education = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="main">
-            <span>september - november 2022</span>
+            <span>May 2022</span>
             <h2>Intern with Udacity</h2>
             <p>
               I gained more experience from this internship through the projects

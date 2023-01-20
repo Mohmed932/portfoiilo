@@ -3,9 +3,9 @@ import "./Contact.css";
 import { motion } from "framer-motion";
 
 const Contact = () => {
-  const [name, setName] = useState(null);
-  const [email, setEmail] = useState(null);
-  const [message, setMessage] = useState(null);
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [message, setMessage] = useState();
   const [validate, setValidate] = useState(null);
   const ValidateEmail = () => {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
@@ -80,7 +80,7 @@ const Contact = () => {
         >
           <form action="https://formspree.io/f/mvongvoe" method="post">
             <div className="main-form">
-              <label for="name">Your Name</label>
+              <label htmlFor="name">Your Name</label>
               <input
                 name="name"
                 id="name"
@@ -92,7 +92,7 @@ const Contact = () => {
               {name === "" ? <span>you must enter you name</span> : ""}
             </div>
             <div className="main-form">
-              <label for="email">Your Email</label>
+              <label htmlFor="email">Your Email</label>
               <input
                 name="Email"
                 id="email"
@@ -105,7 +105,7 @@ const Contact = () => {
               {validate ? <span>you email is not invalid</span> : ""}
             </div>
             <div className="main-form">
-              <label for="message">Your Message</label>
+              <label htmlFor="message">Your Message</label>
               <textarea
                 name="message"
                 id="message"
