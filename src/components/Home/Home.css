@@ -52,6 +52,9 @@
   margin: 10px 0;
   color: #222020;
 }
+.Home-icon button {
+  margin-left: -10px;
+}
 .Home-img {
   width: 35%;
 }

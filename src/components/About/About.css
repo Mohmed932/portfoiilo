@@ -45,7 +45,7 @@
   padding: 20px;
   color: #0061f2;
 }
-.About-personal {
+.About-personal span {
   color: #3d3d3d;
 }
 .About-skilis,
@@ -97,9 +97,7 @@
   .About p {
     padding-right: 15px;
   }
-  .skilis-number {
-    width: 90%;
-  }
+  .skilis-number,
   .skilis-speed {
     width: 90%;
   }
@@ -110,10 +108,11 @@
     width: 95%;
     margin: 0 10px;
   }
-  .About-skilis {
+  .skilis-number,
+  .skilis-speed {
     width: 100%;
   }
-  .About-personal i {
+  s .About-personal i {
     font-size: 10px;
     padding: 10px;
   }
