@@ -115,7 +115,7 @@ const Contact = () => {
                 value={message}
                 required
               />
-              {message === "" ? <span>you must enter you name</span> : ""}
+              {message === "" ? <span>you must enter you Message</span> : ""}
             </div>
             <button type="submit" className="btn" onClick={handelClick}>
               Submit
