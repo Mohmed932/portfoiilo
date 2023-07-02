@@ -1,5 +1,12 @@
 export const data = [
   {
+    id: 2344545,
+    title: "awalbawl",
+    code: "https://github.com/Mohmed932/client_News",
+    visit: "http://awalbawl.online/",
+    desc: "ناقل اخباري يقوم بتجميع البيانات من اشهر واوثق المواقع العربيه ويتيحها لك في مكان واحد",
+  },
+  {
     id: 234,
     title: "movie",
     code: "https://github.com/Mohmed932/noTflix",
