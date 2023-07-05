@@ -3,28 +3,14 @@ import "./Contact.css";
 import { motion } from "framer-motion";
 
 const Contact = () => {
-  const [name, setName] = useState();
-  const [email, setEmail] = useState();
-  const [message, setMessage] = useState();
-  const [validate, setValidate] = useState(null);
-  const ValidateEmail = () => {
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-      return setValidate(true);
-    }
-    return setValidate(false);
+  const messageLength = `I am available to work on my own. Contact me via and connect to my account.`
+  const [name, setname] = useState("mohmed mahmouad fouad")
+  const [email, setEmail] = useState("email")
+  const [message, setmessage] = useState(messageLength)
+  const validateEmail = (email) => {
+    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+    return emailRegex.test(email);
   };
-  const handelemail = (e) => {
-    setEmail(e);
-    ValidateEmail();
-  };
-  const handelClick = () => {
-    if (validate && name !== null && email !== null && message !== null) {
-      setName("");
-      setEmail("");
-      setMessage("");
-    }
-  };
-
   return (
     <motion.div
       className="Contact-me"
@@ -85,11 +71,10 @@ const Contact = () => {
                 name="name"
                 id="name"
                 type="name"
-                onChange={(e) => setName(e.target.value)}
-                value={name}
+                onChange={(e) => setname(e.target.value)}
                 required
               />
-              {name === "" ? <span>you must enter you name</span> : ""}
+              {name.length >= 20 ? "" : <span>Your name must contain more than 10 characters</span>}
             </div>
             <div className="main-form">
               <label htmlFor="email">Your Email</label>
@@ -97,12 +82,11 @@ const Contact = () => {
                 name="Email"
                 id="email"
                 type="email"
-                onChange={(e) => handelemail(e.target.value)}
-                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 required
               />
-              {email === "" ? <span>you must enter you email</span> : ""}
-              {validate ? <span>you email is not invalid</span> : ""}
+              {email.length > 0 ? "" : <span>It must not be empty</span>}
+              {validateEmail(email) === false&email.length > 6 ? <span>Valid email</span> : ""}
             </div>
             <div className="main-form">
               <label htmlFor="message">Your Message</label>
@@ -111,15 +95,14 @@ const Contact = () => {
                 id="message"
                 type="message"
                 className="Contact-message"
-                onChange={(e) => setMessage(e.target.value)}
-                value={message}
+                onChange={(e) => setmessage(e.target.value)}
                 required
               />
-              {message === "" ? <span>you must enter you Message</span> : ""}
+              {message.length >= 50 ? "" : <span>Your message must contain more than 50 characters</span>}
             </div>
-            <button type="submit" className="btn" onClick={handelClick}>
+            {name.length > 15 & message.length > 50 &validateEmail(email)===true? <button type="submit" className="btn">
               Submit
-            </button>
+            </button> : ''}
           </form>
         </motion.div>
       </div>
