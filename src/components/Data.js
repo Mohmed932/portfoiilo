@@ -3,7 +3,7 @@ export const data = [
     id: 2344545,
     title: "akbarsoudi",
     code: "https://github.com/Mohmed932/news_app",
-    visit: "https://akbarsoudi.com/",
+    visit: "https://akbarsoudi.vercel.app/",
     desc: "ناقل اخباري سعودي يقوم بتجميع البيانات من اشهر واوثق المواقع السعوديه ويتيحها لك في مكان واحد",
   },
   {

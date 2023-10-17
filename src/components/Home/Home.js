@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 import image from "../assest/logo.svg";
-import pdf from "../assest/Mohmed Mahmoud Fouad.pdf";
+import pdf from "../assest/Mohmed mahmoud Fouad.docx";
 import { motion } from "framer-motion";
 
 const Home = () => {
   const name = "Mohmed Mahmoud";
   const [number, setNumber] = useState(1);
-  useEffect(() => {}, [number]);
+  useEffect(() => { }, [number]);
   setTimeout(() => setNumber(number + 1), 200);
   if (number > name.length) {
     setNumber(name.length);
@@ -50,7 +50,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
         >
-          Front End developer working for make sense in home
+          Mern Stack developer working for make sense in home
         </motion.h3>
         <motion.div
           className="Home-icon"

@@ -24,14 +24,14 @@ const About = () => {
             ABOUT<span></span>
           </div>
           <div className="About-word">
-            <h1>Front End Web Developer</h1>
+            <h1>Mern Stack Developer</h1>
             <p>
-              I am quite well in HTML, CSS, JS and REACTJS. I am very extremely
-              passionate about my work. I also enjoy learning new things and
-              technologies. I keep a good coding practice, keep things
-              organized, and stick to all coding guidelines. Also, I offer
-              support after delivery, so if you require minor changes after
-              delivery, I can accommodate you. I am seeking long-term projects.
+              I am proficient in MERN stack development,
+              including MongoDB, Express.js, React.js, Node.js, and Next.js.
+              Next.js is a popular framework built on top of React.js that allows for server-side rendering and efficient client-side rendering.
+              With my expertise in these technologies, I have developed robust and scalable web applications.
+              I have experience in both front-end and back-end development, and I stay updated with the latest industry trends and best practices.
+              I am passionate about creating efficient and user-friendly web solutions and strive for excellence in my work.
             </p>
             <div className="About-personal">
               <i class="fa-solid fa-arrow-right"></i>
@@ -72,8 +72,8 @@ const About = () => {
           </div>
           <div className="skilis">
             <div className="skilis-number">
-              <span>html</span>
-              <span>100%</span>
+              <span>html,css,js</span>
+              <span>90%</span>
             </div>
             <div className="skilis-speed">
               <motion.span
@@ -85,8 +85,8 @@ const About = () => {
           </div>
           <div className="skilis">
             <div className="skilis-number">
-              <span>css</span>
-              <span>90%</span>
+              <span>Reactjs,Nextjs</span>
+              <span>86%</span>
             </div>
             <div className="skilis-speed">
               <motion.span
@@ -98,8 +98,8 @@ const About = () => {
           </div>
           <div className="skilis">
             <div className="skilis-number">
-              <span>javascript</span>
-              <span>85%</span>
+              <span>Redux Toolkit</span>
+              <span>78%</span>
             </div>
             <div className="skilis-speed">
               <motion.span
@@ -111,8 +111,8 @@ const About = () => {
           </div>
           <div className="skilis">
             <div className="skilis-number">
-              <span>react js</span>
-              <span>95%</span>
+              <span>Framer Motion</span>
+              <span>65%</span>
             </div>
             <div className="skilis-speed">
               <motion.span
@@ -124,7 +124,7 @@ const About = () => {
           </div>
           <div className="skilis">
             <div className="skilis-number">
-              <span>rest api</span>
+              <span>Git,Github</span>
               <span>75%</span>
             </div>
             <div className="skilis-speed">
@@ -137,7 +137,7 @@ const About = () => {
           </div>
           <div className="skilis">
             <div className="skilis-number">
-              <span>git</span>
+              <span>Nodejs,Expressjs</span>
               <span>83%</span>
             </div>
             <div className="skilis-speed">
@@ -150,7 +150,7 @@ const About = () => {
           </div>
           <div className="skilis">
             <div className="skilis-number">
-              <span>fremer motion</span>
+              <span>mongoose,jwt,bcrypt</span>
               <span>79%</span>
             </div>
             <div className="skilis-speed">
