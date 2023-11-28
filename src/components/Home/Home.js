@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 import image from "../assest/logo.svg";
-import pdf from "../assest/Mohmed mahmoud Fouad.docx";
+import pdf from "../assest/Mohmed mahmoud Fouad.pdf";
 import { motion } from "framer-motion";
 
 const Home = () => {
   const name = "Mohmed Mahmoud";
   const [number, setNumber] = useState(1);
-  useEffect(() => { }, [number]);
+  useEffect(() => {}, [number]);
   setTimeout(() => setNumber(number + 1), 200);
   if (number > name.length) {
     setNumber(name.length);
