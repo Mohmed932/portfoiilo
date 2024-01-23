@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 import image from "../assest/logo.svg";
-import pdf from "../assest/Mohmed mahmoud Fouad.pdf";
+import pdf from "../assest/Mohmed Mahmoud Fouad.pdf";
 import { motion } from "framer-motion";
 
 const Home = () => {
