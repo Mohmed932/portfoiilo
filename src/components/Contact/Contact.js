@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import { motion } from "framer-motion";
+import image from "../assest/deal.webp";
 
 const Contact = () => {
-  const messageLength = `I am available to work on my own. Contact me via and connect to my account.`
-  const [name, setname] = useState("mohmed mahmouad fouad")
-  const [email, setEmail] = useState("email")
-  const [message, setmessage] = useState(messageLength)
+  const messageLength = `I am available to work on my own. Contact me via and connect to my account.`;
+  const [name, setname] = useState("mohmed mahmouad fouad");
+  const [email, setEmail] = useState("email");
+  const [message, setmessage] = useState(messageLength);
   const validateEmail = (email) => {
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
     return emailRegex.test(email);
@@ -27,10 +28,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <img
-            src="https://protfilo-by-js.vercel.app/image/Delivery.webp"
-            alt="deal"
-          />
+          <img src={image} alt="deal" />
           <span>do free work</span>
           <span>
             I am available to work on my own. Contact me via and connect to my
@@ -74,7 +72,11 @@ const Contact = () => {
                 onChange={(e) => setname(e.target.value)}
                 required
               />
-              {name.length >= 20 ? "" : <span>Your name must contain more than 10 characters</span>}
+              {name.length >= 20 ? (
+                ""
+              ) : (
+                <span>Your name must contain more than 10 characters</span>
+              )}
             </div>
             <div className="main-form">
               <label htmlFor="email">Your Email</label>
@@ -86,7 +88,11 @@ const Contact = () => {
                 required
               />
               {email.length > 0 ? "" : <span>It must not be empty</span>}
-              {validateEmail(email) === false&email.length > 6 ? <span>Valid email</span> : ""}
+              {(validateEmail(email) === false) & (email.length > 6) ? (
+                <span>Valid email</span>
+              ) : (
+                ""
+              )}
             </div>
             <div className="main-form">
               <label htmlFor="message">Your Message</label>
@@ -98,11 +104,21 @@ const Contact = () => {
                 onChange={(e) => setmessage(e.target.value)}
                 required
               />
-              {message.length >= 50 ? "" : <span>Your message must contain more than 50 characters</span>}
+              {message.length >= 50 ? (
+                ""
+              ) : (
+                <span>Your message must contain more than 50 characters</span>
+              )}
             </div>
-            {name.length > 15 & message.length > 50 &validateEmail(email)===true? <button type="submit" className="btn">
-              Submit
-            </button> : ''}
+            {(name.length > 15) &
+            (message.length > 50) &
+            (validateEmail(email) === true) ? (
+              <button type="submit" className="btn">
+                Submit
+              </button>
+            ) : (
+              ""
+            )}
           </form>
         </motion.div>
       </div>
