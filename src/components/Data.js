@@ -1,12 +1,5 @@
 export const data = [
   {
-    id: 1,
-    title: "akbarsoudi",
-    code: "https://github.com/Mohmed932/news_app",
-    visit: "https://akbarsoudi.vercel.app/",
-    desc: "ناقل اخباري سعودي يقوم بتجميع البيانات من اشهر واوثق المواقع السعوديه ويتيحها لك في مكان واحد",
-  },
-  {
     id: 2,
     title: "awalbawl",
     code: "https://github.com/Mohmed932/client_News",
