@@ -1,9 +1,9 @@
 export const data = [
   {
     id: 2,
-    title: "awalbawl",
-    code: "https://github.com/Mohmed932/client_News",
-    visit: "http://awalbawl.online/",
+    title: "asfourah",
+    code: "https://github.com/Mohmed932/asfourah",
+    visit: "https://asfourah.vercel.app/",
     desc: "ناقل اخباري يقوم بتجميع البيانات من اشهر واوثق المواقع العربيه ويتيحها لك في مكان واحد",
   },
   {
