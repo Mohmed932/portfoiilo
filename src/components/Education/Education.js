@@ -54,7 +54,7 @@ const Education = () => {
             </p>
             <strong>
               <a
-                href="https://graduation.udacity.com/confirm/SKF6TLDU"
+                href="https://www.udacity.com/certificate/e/a569289a-e2ad-11ec-a2c9-4b11fb893fd9"
                 target="blank"
               >
                 See The Certificate
